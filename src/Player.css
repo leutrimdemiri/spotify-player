@@ -1,0 +1,73 @@
+/*--------------------------------------------------------------
+# Spotify Player UI
+--------------------------------------------------------------*/
+.player-container {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  position: fixed;
+  bottom: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, .74);
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, .1);
+  height: 90px;
+  width: 100%;
+  z-index:300;
+}
+
+.cover-art-image {
+  width: 56px;
+  height: 56px;
+  border-radius: 5px;
+  position: absolute;
+  top:18px;
+  left: 17px;
+  box-shadow: 0 0 7px 1px rgba(0, 0, 0, .2);
+  margin-right: 20px;
+  object-fit: contain;
+}
+.now-playing, .song-title {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 600;
+  font-size:15px;
+  line-height: 0;
+  position: absolute;
+  bottom:3.5rem;
+  left:5.2rem;
+}
+.now-playing, .song-artist {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 400;
+  font-size:14px;
+  line-height: 0;
+  position: absolute;
+  bottom:.4rem;
+  left:5.2rem;
+  color:#333;
+}
+.now-playing, .song-artist:hover {
+  text-decoration: underline;
+}
+.now-playing, .song-artist:focus {
+  text-decoration: underline;
+}
+.playIcon {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  border-radius: 50%;
+  background-color: #e8e8e8;
+  cursor: pointer;
+}
+.playIcon ion-icon {
+  width: 1.7em;
+  height: 1.7em;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: calc(50% - 13px);
+  left: calc(50% - 12px);
+  color:#1b2c3c;
+  cursor: pointer;
+}
