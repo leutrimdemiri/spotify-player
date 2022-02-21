@@ -1,2 +1,2 @@
 
-![alt tag](https://imgur.com/TKFiIZM)
+![alt tag](https://i.imgur.com/TKFiIZM.png)
