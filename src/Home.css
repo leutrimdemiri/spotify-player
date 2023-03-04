@@ -8,7 +8,7 @@
 body {
   user-select: none;
   -moz-user-select: none;
-  background: #fff;
+  background: #f3f7fd;
   color: #444;
   font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -40,9 +40,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* buttons */
 .btn.btn-white {
+  width:200px;
   text-align: left;
   position: relative;
-  padding: 15px 37px;
+  padding: 15px 27px;
   font-size: 13px;
   letter-spacing:.1px;
   background: #fff;
@@ -62,99 +63,6 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top:16px;
 }
-.btn.btn-green {
-  text-align: left;
-  position: relative;
-  padding: 15px 37px;
-  font-size: 13px;
-  letter-spacing:.1px;
-  background: #cdf564;
-  font-weight: 700;
-  border:0;
-  color: #464a55;
-}
-.btn.btn-green:hover, .btn.btn-green:active, .btn.btn-green:focus{
-  background: #cdf564;
-  color: #1e263d !important;
-  outline: none;
-  border:0;
-  box-shadow:none;
-}
-.btn.btn-green ion-icon {
-  font-size:16px;
-  position: absolute;
-  top:16px;
-}
-.btn.btn-login {
-  text-align: left;
-  position: relative;
-  padding: 15px 37px;
-  font-size: 13px;
-  letter-spacing:.1px;
-  background: #1b2c3c;
-  font-weight: 700;
-  border:0;
-  color: #fff;
-}
-.btn.btn-login:hover, .btn.btn-login:active, .btn.btn-login:focus{
-  background: #1b2c3c;
-  color: #fff !important;
-  outline: none;
-  border:0;
-  box-shadow:none;
-}
-.btn.btn-login ion-icon {
-  font-size:16px;
-  position: absolute;
-  top:16px;
-}
-.about {
-  background: #fce0dc;
-}
-.btn-primary {
-  text-align: left;
-  position: relative;
-  padding: 8px 25px;
-  font-size: 13px;
-  letter-spacing:.1px;
-  background: #1b2c3c;
-  font-weight: 700;
-  border:0;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-.btn-primary:hover {
-  color: #fff;
-  background-color: #1e263d;
-  border:0;
-  box-shadow: none;
-}
-.btn-primary:focus, .btn-primary.focus {
-  color: #fff;
-  background-color: #1e263d;
-  border:0;
-  box-shadow:none;
-}
-.btn-primary:active {
-  color: #fff;
-  background-color: #1e263d;
-  border:0;
-  box-shadow: none;
-}
-.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
-.show > .btn-primary.dropdown-toggle {
-  color: #fff;
-  background-color: #1e263d;
-  border:0;
-  box-shadow: none;
-}
-.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
-.show > .btn-primary.dropdown-toggle:focus {
-  color: #fff;
-  background-color: #1e263d;
-  border:0;
-  box-shadow: none;
-}
-
 /*--------------------------------------------------------------
 # content
 --------------------------------------------------------------*/
@@ -179,24 +87,13 @@ h1, h2, h3, h4, h5, h6 {
   user-select: none;
   -moz-user-select:none;
   transition: opacity .3s;
-  color:#f5f5f5;
-  text-align: center; 
+  color:#000;
+  text-align: center;
+  background-color: #fff; 
 }
 .genre-cover:hover {
   opacity: .8;
   cursor: pointer;
-}
-.genre-cover.card-1 {
-  background-color: #95c0af;
-}
-.genre-cover.card-2 {
-  background-color: #f6ebdb;
-}
-.genre-cover.card-3 {
-  background-color: #e34253;
-}
-.genre-cover.card-4 {
-  background-color: #520625;
 }
 .genre-cover h5 {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -217,91 +114,35 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # hero
 --------------------------------------------------------------*/
-section.circle {
-  position: relative;
-  overflow: hidden;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: scroll;
-  background-size: cover;
-  padding:30px 20px;
-  background: url(./images/usher.jpg);
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+section.intro {
+  padding:5px 5px;
+  background-color:#91D8E4;
   font-family: 'Lato', sans-serif;
   border-radius: 20px;
   color:#1b2c3c;
 }
-section.circle .circle-content {
+section.intro .intro-content {
   z-index: 1;
   position: relative;
 }
-section.circle .circle-content h2 {
+section.intro .intro-content h2 {
   font-size:65px;
   font-weight: 900;
   font-family: 'Lato', sans-serif;
 }
-section.circle .circle-content p {
+section.intro .intro-content p {
   font-family: 'Lato', sans-serif;
-  font-weight: 600;
-  font-size:13px;
+  font-weight: 500;
+  font-size:20px;
 }
 @media (min-width: 992px) {
-  section.circle {
-    padding: 50px 50px;
+  section.intro {
+    padding: 30px 15px;
   }
-  section.circle .circle-content .circle-heading {
+  section.intro .intro-content .intro-heading {
     font-size: 6rem;
   }
-  section.circle .circle-content .circle-subheading {
+  section.intro .intro-content .intro-subheading {
     font-size: 4rem;
   }
-}
-
-/*--------------------------------------------------------------
-# cards charts
---------------------------------------------------------------*/
-
-.card {
-  position: relative;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-color: #f5f5f5;
-  background-clip: border-box;
-  border-radius: 20px;
-  padding: 10px;
-  border:0;
-}
-.card-body{
-  margin:0;
-  padding: 0;
-}
-.card-img {
-  border-radius: 15px;
-}
-.card-body {
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  min-height: 0;
-  padding: 0;
-}
-.card h5 {
-  line-height:15px;
-  padding: 18px 3px;
-  color:#000;
-  font-family: 'Open Sans', sans-serif;
-  margin:0;
-  font-weight: 800;
-}
-.card p {
-  line-height:0px;
-  padding: 15px 3px;
-  color:#000;
-  margin:0;
-  font-size: 14px;
 }

@@ -7,21 +7,7 @@ import {Home, Book, Search} from "react-feather";
 class Nav extends React.Component {
   render () {
     return (
-  <div>
-  <div className="col-md-6 ml-sm-auto col-lg-10 px-md-3 px-lg-4 p-2">
-    <header class="navbar navbar-expand-lg navbar-dark bg-white">
-      <button class="navbar-toggler d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span> 
-      </button>
-
-          <form class="my-2 w-30">
-            <input class="search-input" type="text" placeholder="Search for Artists, Songs, or Podcasts" aria-label="Search"/>
-          </form>
-    </header>
-  </div>
+  <>
 
     <div class="container-fluid">
       <div class="row">
@@ -75,7 +61,7 @@ class Nav extends React.Component {
         </nav>
       </div>
     </div>
-</div>
+</>
     );
   }
 }
